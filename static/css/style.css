@@ -57,3 +57,17 @@ h1 {
     padding: 12px 28px;
     border-radius: 10px;
 }
+/* Feature & Statistics Cards */
+
+.card{
+    border-radius:16px;
+    transition:0.3s ease;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.12);
+
+}
