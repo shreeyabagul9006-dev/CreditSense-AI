@@ -1,22 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{% extends "base.html" %}
 
-    <meta charset="UTF-8">
+{% block title %}
+CreditSense AI | Home
+{% endblock %}
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+{% block content %}
 
-    <title>CreditSense AI</title>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
 
-</head>
+        <a class="navbar-brand fw-bold text-success fs-3" href="#">
+            CreditSense AI
+        </a>
 
-<body>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
 
-    <h1>🚀 Welcome to CreditSense AI</h1>
+            <span class="navbar-toggler-icon"></span>
 
-    <p>Your AI-Powered Loan Approval Platform.</p>
+        </button>
 
-</body>
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
 
-</html>
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Features
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item ms-2">
+                    <a class="btn btn-success"
+                       href="#">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="container text-center py-5">
+
+    <h1 class="display-3 fw-bold">
+
+        AI-Powered Loan Approval Platform
+
+    </h1>
+
+    <p class="lead mt-3">
+
+        Get instant loan eligibility predictions
+        using Machine Learning.
+
+    </p>
+
+    <div class="mt-4">
+
+        <button class="btn btn-success btn-lg">
+
+            Get Started
+
+        </button>
+
+        <button class="btn btn-outline-dark btn-lg ms-3">
+
+            Learn More
+
+        </button>
+
+    </div>
+
+</section>
+
+{% endblock %}

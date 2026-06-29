@@ -1,0 +1,59 @@
+/* Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8FAFC;
+    color: #1F2937;
+}
+
+/* Navbar */
+.navbar {
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    color: #10B981 !important;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-left: 18px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #10B981 !important;
+}
+
+/* Hero Section */
+section {
+    padding: 100px 0;
+}
+
+h1 {
+    color: #1E3A8A;
+}
+
+.lead {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    color: #6B7280;
+}
+
+.btn-success {
+    background: #10B981;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    transform: translateY(-3px);
+}
+
+.btn-outline-dark {
+    padding: 12px 28px;
+    border-radius: 10px;
+}
