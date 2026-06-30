@@ -24,14 +24,42 @@
 
 <body>
 
-{% block content %}
-{% endblock %}
+    <!-- Flash Messages -->
+    <div class="container mt-3">
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        {% with messages = get_flashed_messages(with_categories=true) %}
 
-<!-- Custom JS -->
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+            {% if messages %}
+
+                {% for category, message in messages %}
+
+                    <div class="alert alert-{{ category }} alert-dismissible fade show"
+                         role="alert">
+
+                        {{ message }}
+
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="alert"></button>
+
+                    </div>
+
+                {% endfor %}
+
+            {% endif %}
+
+        {% endwith %}
+
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>

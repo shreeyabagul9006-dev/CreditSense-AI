@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="card shadow">
+
+        <div class="card-body">
+
+            <h2>
+                Welcome, {{ user.username }} 👋
+            </h2>
+
+            <hr>
+
+            <p>
+
+                Email:
+
+                <strong>
+
+                    {{ user.email }}
+
+                </strong>
+
+            </p>
+
+            <p>
+
+                This is your protected dashboard.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
